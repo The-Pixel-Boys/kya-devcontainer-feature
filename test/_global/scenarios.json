@@ -1,0 +1,15 @@
+{
+  "pinned-version": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "kya": { "version": "0.32.7" }
+    }
+  },
+  "install-hook": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "remoteUser": "vscode",
+    "features": {
+      "kya": { "installHook": true }
+    }
+  }
+}

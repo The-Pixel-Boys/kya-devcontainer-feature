@@ -1,0 +1,27 @@
+{
+  "id": "kya",
+  "version": "1.0.0",
+  "name": "Shield KYA",
+  "description": "Installs Shield KYA (@shield-agent/kya), the Know Your Agent CLI, globally with npm. Optionally wires its Claude Code hook.",
+  "documentationURL": "https://github.com/The-Pixel-Boys/kya-devcontainer-feature",
+  "licenseURL": "https://github.com/The-Pixel-Boys/kya-devcontainer-feature/blob/main/LICENSE",
+  "keywords": ["ai agents", "agent governance", "kya", "shield agent", "claude code"],
+  "options": {
+    "version": {
+      "type": "string",
+      "default": "latest",
+      "description": "Version of @shield-agent/kya to install from npm, for example 0.32.7, or latest."
+    },
+    "installHook": {
+      "type": "boolean",
+      "default": false,
+      "description": "Also run 'kya connect claude --hooks' for the remote user. Wires the Claude Code PreToolUse hook and the MCP entry in the user's home."
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/node"
+  ]
+}
